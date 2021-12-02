@@ -29,6 +29,7 @@ with open('input1_1.txt', 'r') as inputFile:
         if window1 < window2:
             increases += 1
     print("The number of sliding window increases is:", increases)
+    inputFile.close()
         
         
 
