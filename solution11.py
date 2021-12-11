@@ -2,11 +2,9 @@ class DumboOctopus:
     energyLevel = -1
     flashed = False
     neighbors = []
-    position = -1
     
-    def __init__(self, energy, position):
+    def __init__(self, energy):
         self.energyLevel = int(energy)
-        self.position = position
         
     def increaseEnergy(self):
         if self.flashed:
@@ -37,7 +35,7 @@ with open('input11_2.txt', 'r') as inputFile:
     for line in range(height):
         row = []
         for octopus in range(width):
-            row.append(DumboOctopus(lines[line][octopus], octopus))
+            row.append(DumboOctopus(lines[line][octopus]))
         octopi.append(row)
             
     # Each octopus keeps track of its neighbors so we don't have to
