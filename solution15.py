@@ -47,7 +47,7 @@ with open('input15_2.txt', 'r') as inputFile:
     for line in range(len(lines)):
         lines[line] = [int(num) for num in lines[line].strip()]
         
-    tiles = (5, 5)
+    tiles = (1, 1)
     tileWidth = len(lines[0])
     tileHeight = len(lines)
     
